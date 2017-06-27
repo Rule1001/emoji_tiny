@@ -1,22 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+
+//console.log(emojiArr[0])
+
 class Emoji extends React.Component {
     render() {
         return (
-
-
             <div>
-                <h3>Emoji :-)</h3>
-
-
+               <span>{this.props.symbol}</span>
+                <span>{this.props.title}</span>
+                   
             </div>
         )
     }
 }
 
-Emoji.propTypes = {
+// Emoji.propTypes = {
 
-};
+// };
 
 export default Emoji;
