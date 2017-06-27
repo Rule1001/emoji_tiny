@@ -5,15 +5,12 @@ class Search extends React.Component {
         return (
             <div>
                 <form>
-                    <label>Search Emoji's</label>
-                    <textarea>test search</textarea>
-
+                    <input type="text"/>
                 </form>
-
-
             </div>
         )
     }
+
 }
 
 export default Search;
