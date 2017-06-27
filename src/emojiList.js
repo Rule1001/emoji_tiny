@@ -1,6 +1,5 @@
 import React from "react";
 import Emoji from "./emojis";
-import App from "./app";
 
 const emojis = [
   {
