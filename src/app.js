@@ -1,23 +1,19 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import PropTypes from 'prop-types';
+import EmojiList from './emojiList';
+import Search from './search';
 
+class App extends React.Component {
+    render () {
+        return (
+            <div>
+                <h3>welcome to my emoji app</h3>
+                <Search />
+                <EmojiList />
+            </div>
+        );
 
+    }
+}
 
-const MyFirstComponent = React.createElement(
-Render
+export default App;
 
-
-
-
-
-
-
-
-// Comment.propTypes = {
-
-
-// }
-
-
-ReactDOM.render(Hello, document.getElementById('root'));
