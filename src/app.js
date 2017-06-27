@@ -1,10 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
+
+
 
 const MyFirstComponent = React.createElement(
-  'h1', 
-  { style: { color: 'cornflowerblue' } }, 
-  'Welcome to React!'
-);
+Render
+
+
+
+
+
+
+
+
+// Comment.propTypes = {
+
+
+// }
+
 
 ReactDOM.render(Hello, document.getElementById('root'));
