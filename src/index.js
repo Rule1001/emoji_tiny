@@ -4,10 +4,5 @@ import PropTypes from 'prop-types';
 import App from './app'
 
 
-// Comment.propTypes = {
 
-
-// }
-
-
-ReactDOM.render(<App/>, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
