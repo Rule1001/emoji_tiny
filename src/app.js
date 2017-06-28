@@ -17,7 +17,7 @@ class App extends React.Component {
 
     }
 
-    handleFilterInput (e) {
+    handleFilterInput(e) {
         this.setState({
             filterStr: e.target.value
         });
@@ -27,7 +27,7 @@ class App extends React.Component {
         return (
             <div>
                 <h3>Search Emoji's</h3>
-                <Search onChange={this.handleFilterInput}/>
+                <Search onChange={this.handleFilterInput} />
                 <EmojiList emoji={this.emojiFilter(this.state.emojis)} />
             </div>
         );
@@ -39,7 +39,14 @@ class App extends React.Component {
             // var finder = item.keywords;
             // return str.match(finder)
             var reg = new RegExp(str);
-            return reg.test(item.keywords);
+
+            if (reg.test(item.keywords)) {
+                return reg.test(item.keywords);
+            } else {
+                return reg.test(item.title);
+
+            }
+
         });
     }
 }
